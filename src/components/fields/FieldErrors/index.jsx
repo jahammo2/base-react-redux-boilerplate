@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as propTypes from 'src/constants/propTypes';
+import * as basePropTypes from 'src/constants/propTypes/base';
 
 import styles from './styles.module.scss';
 
@@ -15,7 +15,7 @@ function FieldErrors({ errorMessages }) {
 }
 
 FieldErrors.propTypes = {
-  errorMessages : propTypes.errorMessages.isRequired,
+  errorMessages : basePropTypes.errorMessages.isRequired,
 };
 
 export default FieldErrors;

@@ -1,8 +1,7 @@
 import classNames from 'classnames/bind';
 import React from 'react';
 
-import * as propTypes from 'src/constants/propTypes';
-import * as sharedComponentPropTypes from 'src/constants/propTypes/sharedComponents';
+import * as basePropTypes from 'src/constants/propTypes/base';
 
 import FieldErrors from 'src/components/shared/FieldErrors';
 
@@ -45,12 +44,12 @@ function TextField(props) {
 }
 
 TextField.propTypes = {
-  disabled      : sharedComponentPropTypes.disabled.isRequired,
-  errorMessages : propTypes.errorMessages,
-  htmlFor       : sharedComponentPropTypes.htmlFor.isRequired,
-  name          : sharedComponentPropTypes.name.isRequired,
-  placeholder   : sharedComponentPropTypes.placeholder,
-  type          : sharedComponentPropTypes.type.isRequired,
+  disabled      : basePropTypes.disabled.isRequired,
+  errorMessages : basePropTypes.errorMessages,
+  htmlFor       : basePropTypes.htmlFor.isRequired,
+  name          : basePropTypes.name.isRequired,
+  placeholder   : basePropTypes.placeholder,
+  type          : basePropTypes.type.isRequired,
 };
 
 export default TextField;

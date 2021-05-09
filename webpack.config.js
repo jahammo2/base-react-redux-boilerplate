@@ -24,10 +24,14 @@ const base = {
           {
             loader  : 'sass-resources-loader',
             options : {
-              resources: 'src/styles/globallyAvailable.scss',
+              resources: 'src/styles/globally-available.scss',
             },
           },
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
       },
       {
         test: /\.js|\.jsx$/,
@@ -47,7 +51,7 @@ const base = {
     alias: {
       src : srcDir,
     },
-    extensions: ['*', '.js', '.jsx', '.scss'],
+    extensions: ['*', '.js', '.jsx', '.css', '.scss'],
   },
   target: 'web',
 };

@@ -1,12 +1,9 @@
 import React, { PureComponent } from 'react';
 
-import * as authenticationPropTypes from 'src/constants/propTypes/authentication';
-
 import styles from './styles.module.scss';
 
 class Dashboard extends PureComponent {
   static propTypes = {
-    name : authenticationPropTypes.name,
   }
 
   getOpeningText() {

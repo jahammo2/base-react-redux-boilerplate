@@ -2,13 +2,10 @@ import apiService from './api';
 
 export default {
   find(id) {
-    const params = {
-      query     : print(find),
-      variables : { id },
-    };
+    const params = { id };
 
     return apiService
-      .post('/graphql', params)
+      .post('/foos', params)
       .then(({ data : { data } }) => data)
       .catch(handleError);
   },

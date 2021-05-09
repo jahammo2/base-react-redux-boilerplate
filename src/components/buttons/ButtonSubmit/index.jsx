@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import React from 'react';
 
-import * as sharedComponentPropTypes from 'src/constants/propTypes/sharedComponents';
+import * as basePropTypes from 'src/constants/propTypes/base';
 
 import styles from './styles.module.scss';
 
@@ -37,12 +37,12 @@ function ButtonSubmit(props) {
 }
 
 ButtonSubmit.propTypes = {
-  disabled    : sharedComponentPropTypes.disabled,
-  floatRight  : sharedComponentPropTypes.floatRight,
-  handleClick : sharedComponentPropTypes.handleClick,
-  isSecondary : sharedComponentPropTypes.isSecondary,
-  type        : sharedComponentPropTypes.type.isRequired,
-  value       : sharedComponentPropTypes.value.isRequired,
+  disabled    : basePropTypes.disabled,
+  floatRight  : basePropTypes.floatRight,
+  handleClick : basePropTypes.handleClick,
+  isSecondary : basePropTypes.isSecondary,
+  type        : basePropTypes.type.isRequired,
+  value       : basePropTypes.value.isRequired,
 };
 
 export default ButtonSubmit;

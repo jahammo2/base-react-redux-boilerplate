@@ -2,8 +2,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import React from 'react';
 
-import * as propTypes from 'src/constants/propTypes';
-import * as sharedComponentPropTypes from 'src/constants/propTypes/sharedComponents';
+import * as basePropTypes from 'src/constants/propTypes/base';
 
 import styles from './styles.module.scss';
 
@@ -35,9 +34,9 @@ function ButtonLink(props) {
 }
 
 ButtonLink.propTypes = {
-  text      : propTypes.text.isRequired,
-  to        : propTypes.to.isRequired,
-  withArrow : sharedComponentPropTypes.withArrow,
+  text      : basePropTypes.text.isRequired,
+  to        : basePropTypes.to.isRequired,
+  withArrow : basePropTypes.withArrow,
 };
 
 export default ButtonLink;
