@@ -1,3 +1,5 @@
+import handleError from 'src/services/shared/handleError';
+
 import apiService from './api';
 
 export default {

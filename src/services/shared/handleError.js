@@ -1,5 +1,3 @@
-import ErrorsService from 'src/services/Errors';
-
 export default function ({ response }) {
-  console.error(response);
+  console.error(response); // eslint-disable-line no-console
 }

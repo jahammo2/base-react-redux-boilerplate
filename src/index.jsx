@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Routes from './Routes';
 import storeService from 'src/services/store';
+import Routes from './Routes';
 
 import 'normalize.css';
 import 'src/styles/base/index.scss';

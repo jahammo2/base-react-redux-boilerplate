@@ -2,7 +2,7 @@ import actionTypes from 'src/constants/actionTypes';
 import foosService from 'src/services/foos';
 
 export function find(id) { // eslint-disable-line import/prefer-default-export
-  return (dispatch) => {
+  return dispatch => {
     dispatch({ type : actionTypes.FIND_FOO_START });
 
     return foosService
@@ -13,7 +13,7 @@ export function find(id) { // eslint-disable-line import/prefer-default-export
           payload : { foo },
         });
       })
-      .catch((error) => {
+      .catch(error => {
         dispatch({
           type    : actionTypes.FIND_FOO_FAILURE,
           payload : { error },

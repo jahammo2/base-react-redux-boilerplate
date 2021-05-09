@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 import * as basePropTypes from 'src/constants/propTypes/base';
 import * as foosActionCreators from 'src/actions/foos';

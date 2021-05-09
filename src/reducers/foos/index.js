@@ -15,9 +15,11 @@ export default function (state = INITIAL_STATE, { payload, type }) {
       return state.set('isActive', true);
 
     case actionTypes.FOO__FIND_SUCCESS:
-      return state.withMutations((map) => {
+      return state.withMutations(map => {
+        const { foo } = payload;
+
         map.set('isActive', false);
-        map.setIn(['loaded', 'foos', foo.id], Immutable.fromJS(payload.foo));
+        map.setIn(['loaded', 'foos', foo.id], Immutable.fromJS(foo));
       });
 
     default:

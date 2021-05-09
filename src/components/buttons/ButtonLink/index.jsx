@@ -22,7 +22,7 @@ function ButtonLink(props) {
     <div className={ styles.Root }>
       <Link className={ styles.Link } to={ to }>
         <div className={ getButtonClassNames(props) }>
-          {text}
+          { text }
 
           <If condition={ withArrow }>
             <i className="fas fa-long-arrow-alt-right" />

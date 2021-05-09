@@ -6,9 +6,8 @@
 
 ## TODOs
 
-- [ ] set up linting
+- [x] set up linting
 - [x] set up testing
 - [x] turn over to hooks
-- [x] come up with better name than foo
 - [x] update with where Dot is at now
 - [ ] update webpack to actually have a working dev server
