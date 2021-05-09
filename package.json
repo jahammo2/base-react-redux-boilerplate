@@ -1,0 +1,43 @@
+{
+  "name": "base-react-redux-boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "immutable": "^4.0.0-rc.12",
+    "keymirror": "^0.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-persist-transform-immutable": "^5.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-jsx-control-statements": "^4.1.0",
+    "css-loader": "^5.2.4",
+    "fast-sass-loader": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "react-immutable-proptypes": "^2.2.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "sass-resources-loader": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
